@@ -1,10 +1,12 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import HeaderBar from '../components/HeaderBar';
+import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
   return (
+    <>
+    <HeaderBar />
     <div className={styles.container}>
       <Head>
         <title>Christian Oliveira - Full Stack Developer</title>
@@ -13,11 +15,10 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to personal website!
-        </h1>
+
       </main>
     </div>
+    </>
   )
 }
 
